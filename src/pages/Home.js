@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ActorGrid from '../components/actor/ActorGrid';
 import MainpagesLayout from '../components/MainpagesLayout';
-import ShowGrid from '../components/show/ShowGrid';
 import { apiGet } from '../misc/config';
+import ActorGrid from '../components/actor/ActorGrid';
+import ShowGrid from '../components/show/ShowGrid';
 
 const Home = () => {
   const [input, setInput] = useState('');
