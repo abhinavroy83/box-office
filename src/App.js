@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Starred from './pages/Starred';
 import Show from './pages/Show';
 
+
 const theme = {
   mainColors: {
     blue: '#2400ff',
@@ -16,12 +17,14 @@ const theme = {
 
 function App() {
   return (
+<>
     <ThemeProvider theme={theme}>
 
 
     <Switch>
       <Route exact path="/">
         <Home />
+       
       </Route>
 
       <Route exact path="/starred">
@@ -36,7 +39,13 @@ function App() {
         <div>page not found 404?</div>
       </Route>
     </Switch>
+  
+    
     </ThemeProvider>
+    
+  
+
+    </>
   );
 }
 

@@ -10,6 +10,7 @@ import {
   SearchInput,
 } from './Home.styled';
 import CustomRadio from '../components/CustomRadio';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [input, setInput] = useLastQuery();
@@ -55,6 +56,7 @@ const Home = () => {
   };
 
   return (
+    <>
     <MainpagesLayout>
       <SearchInput
         type="text"
@@ -87,11 +89,13 @@ const Home = () => {
       </RadioInputsWrapper>
       <SearchButtonWrapper>
         <button type="button" onClick={onSearch}>
-          Search
+          search
         </button>
       </SearchButtonWrapper>
       {renderResults()}
     </MainpagesLayout>
+    <Footer/>
+    </>
   );
 };
 
