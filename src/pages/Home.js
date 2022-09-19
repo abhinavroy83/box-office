@@ -57,44 +57,44 @@ const Home = () => {
 
   return (
     <>
-    <MainpagesLayout>
-      <SearchInput
-        type="text"
-        placeholder="Search for something"
-        onChange={onInputChange}
-        onKeyDown={onKeyDown}
-        value={input}
-      />
+      <MainpagesLayout>
+        <SearchInput
+          type="text"
+          placeholder="Search for something"
+          onChange={onInputChange}
+          onKeyDown={onKeyDown}
+          value={input}
+        />
 
-      <RadioInputsWrapper>
-        <div>
-          <CustomRadio
-            label="Shows"
-            id="shows-search"
-            value="shows"
-            checked={isShowsSearch}
-            onChange={onRadioChange}
-          />
-        </div>
+        <RadioInputsWrapper>
+          <div>
+            <CustomRadio
+              label="Shows"
+              id="shows-search"
+              value="shows"
+              checked={isShowsSearch}
+              onChange={onRadioChange}
+            />
+          </div>
 
-        <div>
-          <CustomRadio
-            label="Actors"
-            id="actors-search"
-            value="shows"
-            checked={!isShowsSearch}
-            onChange={onRadioChange}
-          />
-        </div>
-      </RadioInputsWrapper>
-      <SearchButtonWrapper>
-        <button type="button" onClick={onSearch}>
-          search
-        </button>
-      </SearchButtonWrapper>
-      {renderResults()}
-    </MainpagesLayout>
-    <Footer/>
+          <div>
+            <CustomRadio
+              label="Actors"
+              id="actors-search"
+              value="Actors"
+              checked={!isShowsSearch}
+              onChange={onRadioChange}
+            />
+          </div>
+        </RadioInputsWrapper>
+        <SearchButtonWrapper>
+          <button type="button" onClick={onSearch}>
+            search
+          </button>
+        </SearchButtonWrapper>
+        {renderResults()}
+      </MainpagesLayout>
+      <Footer />
     </>
   );
 };
