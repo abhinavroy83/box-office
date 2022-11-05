@@ -5,6 +5,8 @@ import {ThemeProvider} from 'styled-components'
 import Home from './pages/Home';
 import Starred from './pages/Starred';
 import Show from './pages/Show';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 
 const theme = {
@@ -23,7 +25,7 @@ function App() {
 
     <Switch>
       <Route exact path="/">
-        <Home />
+        <Login />
        
       </Route>
 
